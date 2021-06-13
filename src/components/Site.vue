@@ -481,6 +481,12 @@
       </form>
     </div>
 
+    <div>
+      show image
+      <input>
+
+    </div>
+
   </div>
 </template>
 
@@ -528,7 +534,14 @@ export default {
         console.log(e)
       })
     },
-
+getphoto(){
+      axios.get('http://localhost:8080/getphoto', this.photo)
+          .then(response => {
+            console.log(response)
+          }).catch(e => {
+        console.log(e)
+      })
+},
     created() {
       axios.get(`http://jsonplaceholder.typicode.com/posts`)
           .then(response => {
