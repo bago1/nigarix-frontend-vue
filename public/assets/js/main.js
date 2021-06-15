@@ -247,7 +247,6 @@
     }
   });
 
-//todo islemir link bootstrapmade.com
     $(document).on("change",".uploadFile", function()
     {
     		var uploadFile = $(this);
